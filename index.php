@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>VALLEY LIFE WATER FACTORY SYSTEM</title>
+<title>VALLEY LIFE WATER MANAGEMENT SYSTEM</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Credit Login / Register Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
@@ -18,7 +18,7 @@
 <!-- //web font -->
 </head>
 <body>
-<h1>VALLEY LIFE WATER FACTORY SYSTEM</h1>
+<h1>VALLEY LIFE WATER MANAGEMENT SYSTEM</h1>
 <hr>
 <hr>
 <div class="main-agileits"> 
