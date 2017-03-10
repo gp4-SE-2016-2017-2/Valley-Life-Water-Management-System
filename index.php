@@ -71,3 +71,22 @@
 	</script>
 </body>
 </html>
+<?php 
+		require ("testmysql.php");
+		if (isset($_POST["sub"])) {
+			$user = $_POST['Username'];
+			$pword = $_POST['Password'];
+			$sql= "SELECT * FROM login";
+		 	$result = mysqli_query($conn,$sql);
+				 while ($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
+				 	if($user==$row["username"] && $pword==$row["password"]){
+				 		echo "Login successful";
+				 	}
+				 	else{
+				 		echo "Login Unsuccessful\n Wrong username or password";
+				 	}
+				 
+		$conn->close();
+		}  
+	}
+		?>
