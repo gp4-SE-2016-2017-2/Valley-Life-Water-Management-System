@@ -9,8 +9,8 @@
 			<input id="inp" type="text" name="spoilage" Placeholder="Spoilage"><br>
 			Date: <input id="inp" type="date" value="delDate" name="delivDate" required=""><br>
 			<input id="inp" type="submit" value="Submit" name="sub">
-		</fieldset>
-	</form>
+		</fieldset> 
+	</form> <!--End of form -->
 </body>
 </html>
 <?php
