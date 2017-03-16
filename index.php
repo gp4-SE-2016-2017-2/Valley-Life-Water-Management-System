@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>VALLEY LIFE WATER MANAGEMENT SYSTEM</title>
+<title>Staff Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Credit Login / Register Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Custom Theme files -->
-<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- //Custom Theme files -->
@@ -16,34 +16,63 @@
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
 <!-- //web font -->
+<style type="text/css">
+	.form-group input[type="text"]{
+		width: 250px;
+	}
+	.form-group input[type="password"]{
+		width: 250px;
+	}
+	form{
+		float: right;
+		margin-right: 100px;
+
+	}
+    h5{
+    	color: red;
+    }
+   
+     h2{
+    	color: red;
+    }
+ 
+</style>
 </head>
 <body>
-<h1>VALLEY LIFE WATER MANAGEMENT SYSTEM</h1>
+
+<h1 align="center">VALLEY LIFE WATER MANAGEMENT SYSTEM</h1>
 <hr>
 <hr>
 <div class="main-agileits"> 
   <!--form-stars-here-->
   <div class="form-w3-agile">
-    <h2>System Login</h2>
-    <form action="#" method="post">
-      <div class="form-sub-w3">
-        <input type="text" name="Username" placeholder="Credentials " required="" />
-        <div class="icon-w3"> <i class="fa fa-user" aria-hidden="true"></i> </div>
-      </div>
-      <div class="form-sub-w3">
-        <input type="password" name="Password" placeholder="Password" required="" />
-        <div class="icon-w3"> <i class="fa fa-unlock-alt" aria-hidden="true"></i> </div>
-      </div>
-      <p class="p-bottom-w3ls">Can't Login? </p>
-      <center>
-      <a href="Register.php">Register Here</a>
-      <div class="submit-w3l">
-        <!-- #BeginDate format:fcAm1m -->Saturday, February 18, 2017  20:56<!-- #EndDate -->
-        <input type="submit" value="Login">
-      </div>
-    </form>
+    <h2 align="center">Staff Login</h2>
+    
   </div>
   <!--//form-ends-here--> 
+</div>
+
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+  	
+  	<form name="ob" method="post" action="index.php">
+  <div class="form-group">
+    <label for="exampleInputEmail2">Username</label>
+    <input type="text" name="Username" class="form-control" id="exampleInputEmail2" placeholder="Username">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="Password" placeholder="Password">
+  </div>
+  
+  
+  <button type="submit" class="btn btn-default" name="sub">Login</button>
+</form>
+
+
+  </div>
+  <div class="col-md-4"></div>
 </div>
 
 <!-- copyright -->
@@ -80,13 +109,20 @@
 		 	$result = mysqli_query($conn,$sql);
 				 while ($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
 				 	if($user==$row["username"] && $pword==$row["password"]){
-				 		echo "Login successful";
+				 		echo "<h5 align='center'> Login successful</h5>";
+				 		//header('location: production.php');
 				 	}
 				 	else{
-				 		echo "Login Unsuccessful\n Wrong username or password";
+				 		echo "<h5 align='center'>Login Unsuccessful\n Wrong username or password</h5>";
+
 				 	}
 				 
 		$conn->close();
 		}  
 	}
 		?>
+
+
+
+
+
