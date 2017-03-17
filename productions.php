@@ -25,35 +25,16 @@
 <div class="main-agileits"> 
   <!--form-stars-here-->
   <div class="form-w3-agile">
-    <h2>DELIVERIES</h2>
+    <h2>PRODUCTION FORM </h2>
     <form action="#" method="post">
       <div class="form-sub-w3">
-        <center>NUMBER OF BAGS
-        <input type="text" name="quantity_bags" placeholder="quantity(Bags)" required />
+        <center><label>PRODUCT ID</label><input type="text" name="prodID" placeholder="Product ID" required />
 
-        <label>CUSTOMER NAME:</label> <input type="text" name="customer_name" placeholder="Customer_name" required />
+        <label>QUANTITY PRODUCED :</label> <input type="text" name="Num_bags" placeholder="Quantity" required />
         <br>
-        DELIVERY ID:
-        <input type="text" name="delivery_name" placeholder="del_ID" required ="required" />
-      
-         <p>
-           <center><label> LOCATION OF DELIVERY </label></center><br>
-             <input type="radio" name="Customer_Location" value="In-House" id="Customer_Location_0">
-             In-House</label>
-           <br>
-           <label>
-             <input type="radio" name="Customer_Location" value="On-Campus" id="Customer_Location_1">
-             On-Campus</label>
-           <br>
-           <label>
-             <input type="radio" name="Customer_Location" value="Off-Campus" id="Customer_Location_2">
-             Off-Campus</label>
-           <br>
-         </p>
-         <br>
-          <label>Select Location(In-House distribution ONLY) </label> <input type="text" name="location_inhouse" placeholder="J.J Nortey / NAGSDA / M.A Bediako / E.G White  etc " />
-<label>DATE : <br><center></label><input type = "date" name="Date" align="center"/><br><br>
-        
+         <label>SPOILAGE</label> <input type="text" name="Spoilage" placeholder="Spoils" required ="required" />
+          <label>DATE OF PRODUCTION : <br><center></label><input type = "date" name="Date" align="center"/><br><br>
+        <div class="icon-w3"> <i class="fa fa-user" aria-hidden="true"></i> </div>
       </div>
       <div class="form-sub-w3">
         <div class="icon-w3"> <i class="fa fa-unlock-alt" aria-hidden="true"></i> </div>
@@ -62,14 +43,27 @@
       <center>
       
       <div class="submit-w3l">
-        <!-- #BeginDate format:fcAm1m -->Monday, March 13, 2017  11:40<!-- #EndDate -->
+        <!-- #BeginDate format:fcAm1m -->Monday, March 13, 2017  10:58<!-- #EndDate -->
         <input type="submit" value="SUBMIT">
       </div>
     </form>
   </div>
   <!--//form-ends-here--> 
 </div>
-
+<?php
+require ("testmysql.php");
+	if(isset($_POST["sub"])){
+	$num_of_bags= $_POST['Num_bags'];
+	$spoil=$_POST['spoilage'];
+	$date= $_POST['prodDate'];
+	$sql = "INSERT INTO productiontb(`NumOfBags`,`Spoilage`, `Date`) VALUES('$num_of_bags','$spoil', '$date') ";
+	if(mysqli_query($conn,$sql)){
+		echo "Data insertion successful.";
+	}
+	else{echo "Error!!";}
+	$conn->close();
+}
+?>
 <!-- copyright -->
 
 <!-- //copyright --> 

@@ -25,35 +25,17 @@
 <div class="main-agileits"> 
   <!--form-stars-here-->
   <div class="form-w3-agile">
-    <h2>DELIVERIES</h2>
+    <h2>ADD USER FORM</h2>
     <form action="#" method="post">
       <div class="form-sub-w3">
-        <center>NUMBER OF BAGS
-        <input type="text" name="quantity_bags" placeholder="quantity(Bags)" required />
+        <center><label>USER ID</label><input type="text" name="prodID" placeholder="User ID" required />
 
-        <label>CUSTOMER NAME:</label> <input type="text" name="customer_name" placeholder="Customer_name" required />
+        <label>USER PASSWORD:</label> <input type="password" name="user_pass" placeholder="password" required />
+        <label>CONFIRM PAsSWORD:</label> <input type="password" name="user_pass1" placeholder="re-type password" required />
         <br>
-        DELIVERY ID:
-        <input type="text" name="delivery_name" placeholder="del_ID" required ="required" />
-      
-         <p>
-           <center><label> LOCATION OF DELIVERY </label></center><br>
-             <input type="radio" name="Customer_Location" value="In-House" id="Customer_Location_0">
-             In-House</label>
-           <br>
-           <label>
-             <input type="radio" name="Customer_Location" value="On-Campus" id="Customer_Location_1">
-             On-Campus</label>
-           <br>
-           <label>
-             <input type="radio" name="Customer_Location" value="Off-Campus" id="Customer_Location_2">
-             Off-Campus</label>
-           <br>
-         </p>
-         <br>
-          <label>Select Location(In-House distribution ONLY) </label> <input type="text" name="location_inhouse" placeholder="J.J Nortey / NAGSDA / M.A Bediako / E.G White  etc " />
-<label>DATE : <br><center></label><input type = "date" name="Date" align="center"/><br><br>
-        
+         <label>USER DEPARTMENT</label> <input type="text" name="user_dept" placeholder="Distribution/Sales/Accounts" required ="required" />
+          <label>DATE OF INCLUSION: <br><center></label><input type = "date" name="user_date" align="center"/><br><br>
+        <div class="icon-w3"> <i class="fa fa-user" aria-hidden="true"></i> </div>
       </div>
       <div class="form-sub-w3">
         <div class="icon-w3"> <i class="fa fa-unlock-alt" aria-hidden="true"></i> </div>
@@ -62,7 +44,7 @@
       <center>
       
       <div class="submit-w3l">
-        <!-- #BeginDate format:fcAm1m -->Monday, March 13, 2017  11:40<!-- #EndDate -->
+        <!-- #BeginDate format:fcAm1m -->Monday, March 13, 2017  11:05<!-- #EndDate -->
         <input type="submit" value="SUBMIT">
       </div>
     </form>

@@ -15,41 +15,71 @@
 <link href="//fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
-
 <!-- //web font -->
 </head>
 <body>
 <h1>VALLEY LIFE WATER FACTORY SYSTEM</h1>
+
 <hr>
 <hr>
-<div class="main-agileits"> 
-  <!--form-stars-here-->
-  <div class="form-w3-agile">
-    <h2>System Login</h2>
-    <form action="#" method="post">
-      <div class="form-sub-w3">
-        <input type="text" name="Username" placeholder="Credentials " required />
-        <div class="icon-w3"> <i class="fa fa-user" aria-hidden="true"></i> </div>
-      </div>
-      <div class="form-sub-w3">
-        <input type="password" name="Password" placeholder="Password" required />
-        <div class="icon-w3"> <i class="fa fa-unlock-alt" aria-hidden="true"></i> </div>
-      </div>
-      <p class="p-bottom-w3ls">Can't Login? </p>
-      <center>
-      <a href="Register.php">Register Here</a>
-      <div class="submit-w3l">
-        <!-- #BeginDate format:fcAm1m -->Sunday, March 5, 2017  14:29<!-- #EndDate -->
-        <input type="submit" value="Login">
-      </div>
-    </form>
-  </div>
-  <!--//form-ends-here--> 
+
+<center><h2>WELCOME ADMIN</h2></center></div>
+<!-- //copyright --> 
+
+<div class="banner">
+		<div class="header">
+			<div class="container">
+				<div class="header-left">
+					<div class="w3layouts-logo">
+						<h1>
+							<a href="Admin_dash.php">Admin Dashboard</a>
+						</h1>
+					</div>
+				</div>
+				<div class="header-right">
+				  <p>&nbsp;</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+				
+<div class="image" style="alignment-adjust:middle">
+
+
+<a href="excel.php"</a><img src="images/images.png" alt="excel" width="200" height="150"></a>
+
+
+<a href="excel.php"</a><img src="images/download.jpg" alt="PDF" width="200" height="150"></a>
+
+
+<a href="add_user.php"</a><img src="images/add-user-icon.jpg"" alt="excel" width="200" height="150"></a>
+
+
+<a href="delete_user.php"</a><img src="images/user_delete.png" alt="excel" width="200" height="150"></a>
+
+
+<a href="view_inventory.php"</a><img src="images/stock.png" alt="excel" width="200" height="150"></a>
+
+
+<a href="view_members.php"</a><img src="images/members-icons.jpg" alt="excel" width="200" height="150"></a>
+<br>
+<br>
+<br>
+
+<center><a href="index.php"</a><img src="images/sign-out-logout-icon-4.jpg" alt="excel" width="200" height="150"></a>
+
+
 </div>
 
-<!-- copyright -->
 
-<!-- //copyright --> 
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> 
 <!-- pop-up-box --> 
 <script src="js/jquery.magnific-popup.js" type="text/javascript"></script> 
