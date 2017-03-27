@@ -95,8 +95,6 @@ CREATE TABLE IF NOT EXISTS `sales` (
   `Date` date NOT NULL,
   `DailySale` decimal(6,0) NOT NULL,
   `DIscount` decimal(6,0) DEFAULT NULL,
-  `DeliveryID` int(10) NOT NULL,
-  `ProductionID` int(10) NOT NULL,
   PRIMARY KEY (`SalesID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
